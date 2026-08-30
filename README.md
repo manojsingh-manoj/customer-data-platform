@@ -9,7 +9,7 @@ The project shows how customer changes made through a Spring Boot service and pe
 The name *Customer Data Platform* describes the business domain; the technical focus of this POC is **CDC, event streaming, and decoupled downstream processing** rather than a traditional marketing or analytics CDP.
 
 The project is intended as a practical reference for understanding PostgreSQL logical replication, Debezium, Kafka Connect, Kafka topics, CDC event structures, and event-driven service integration.
-
+![End-to-end architecture](images/cdc_advantage_arch.png)
 # Customer Data Platform --- CDC POC
 
 ## 1. Purposeß
