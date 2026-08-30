@@ -1,0 +1,20 @@
+{
+  "name": "customer-postgres-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+
+    "database.hostname": "postgres",
+    "database.port": "5432",
+    "database.user": "cdc_user",
+    "database.password": "cdc_user_dev",
+    "database.dbname": "customerdb",
+
+    "topic.prefix": "customerdb",
+    "plugin.name": "pgoutput",
+
+    "publication.name": "dbz_customer_publication",
+    "publication.autocreate.mode": "disabled",
+
+    "table.include.list": "public.customer"
+  }
+}
