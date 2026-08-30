@@ -1,6 +1,18 @@
+## About This Project
+
+**Customer Data Platform** is a proof of concept demonstrating an **event-driven customer data pipeline using Change Data Capture (CDC)**.
+
+The project shows how customer changes made through a Spring Boot service and persisted in PostgreSQL can be captured by **Debezium**, streamed through **Kafka**, and consumed by an independent downstream Spring Boot service.
+
+**Spring Boot → PostgreSQL → Debezium → Kafka → CDC Consumer**
+
+The name *Customer Data Platform* describes the business domain; the technical focus of this POC is **CDC, event streaming, and decoupled downstream processing** rather than a traditional marketing or analytics CDP.
+
+The project is intended as a practical reference for understanding PostgreSQL logical replication, Debezium, Kafka Connect, Kafka topics, CDC event structures, and event-driven service integration.
+
 # Customer Data Platform --- CDC POC
 
-## 1. Purpose
+## 1. Purposeß
 
 This repository demonstrates an end-to-end Change Data Capture (CDC)
 pipeline:
